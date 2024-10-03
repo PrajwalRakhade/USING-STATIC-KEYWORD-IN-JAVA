@@ -1,17 +1,16 @@
-
 package check;
 import java.util.Scanner;
 
-class over{
+class state{
+	static int  a=10;
 	
 	
-	int  add(int x,int y) {
-		return(x+y);
-	}
-	float  add(float x, float y) {
-		return(x+y);
+	static void display(int b) {
+		System.out.println(a);
+		System.out.println(b);
 	}
 }
+	
 
 
 
@@ -20,9 +19,9 @@ class over{
 public class Main {
 
 	public static void main(String[] args) {
-	over O=new over();
-	System.out.println(O.add(22,45));
-	System.out.println(O.add(33,76));
+	
+	System.out.println(state.a);
+	state.display(34);
 	
 
 }
